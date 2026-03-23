@@ -3,3 +3,4 @@ langchain-openai
 langchain
 dotenv
 streamlit
+langchain-ollama
