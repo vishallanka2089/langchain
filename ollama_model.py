@@ -4,6 +4,7 @@ from langchain_ollama import ChatOllama
 
 llm = ChatOllama(model="gemma3:1b")
 
-res = llm.invoke("Explain LLM Architecture in as much detail as possible")
+res = llm.stream("What is the stock price of Microsoft")
 
-print(res.content)
+for chunk in res:
+    print(chunk.content, end="")
