@@ -1,0 +1,190 @@
+# 🚀 COMPLETE PYTHON + VENV + JUPYTER + GIT SETUP (MASTER GUIDE)
+
+---
+
+# 🔹 1. Go to Project Folder
+
+cd "C:\Users\vanil\OneDrive\Desktop\Vishal\Langchain"
+
+---
+
+# 🔹 2. Create Virtual Environment
+
+python -m venv venv
+
+---
+
+# 🔹 3. Activate Virtual Environment
+
+venv\Scripts\activate
+
+👉 You should see:
+(venv) C:\Users...
+
+---
+
+# 🔹 4. Install Required Packages
+
+pip install notebook ipykernel
+
+---
+
+# 🔹 5. (Optional but Good) Register Kernel
+
+python -m ipykernel install --user --name=langchain-env
+
+👉 Note: In VS Code, selecting Python (venv) is enough
+
+---
+
+# 🔹 6. Open VS Code
+
+* Open your project folder
+* Install extensions:
+  ✔ Python (Microsoft)
+  ✔ Jupyter (Microsoft)
+
+---
+
+# 🔹 7. Select Python Interpreter (VERY IMPORTANT)
+
+Ctrl + Shift + P → Python: Select Interpreter
+
+👉 Choose:
+.../Langchain/venv/Scripts/python.exe
+
+---
+
+# 🔹 8. Create Notebook
+
+* Create: example.ipynb
+  OR
+* Ctrl + Shift + P → New Jupyter Notebook
+
+---
+
+# 🔹 9. Select Kernel
+
+Top-right → Select Kernel → choose:
+
+✔ Python (venv)
+
+---
+
+# 🔹 10. Run Code
+
+Shift + Enter to execute cells
+
+---
+
+# 🧠 CORE CONCEPTS
+
+✔ venv = isolated environment
+✔ kernel = environment used by notebook
+✔ .py → uses terminal
+✔ .ipynb → uses kernel
+
+---
+
+# 🔗 GIT SETUP (WITH UPDATED EMAIL)
+
+---
+
+# 🔹 11. Verify Git
+
+git --version
+
+---
+
+# 🔹 12. Set Correct Email & Name (IMPORTANT)
+
+git config --global user.name "Your Name"
+git config --global user.email "[your_new_email@example.com](mailto:your_new_email@example.com)"
+
+---
+
+# 🔹 13. Verify
+
+git config --global user.email
+
+---
+
+# 🔹 14. Initialize Git
+
+git init
+
+---
+
+# 🔹 15. Create .gitignore
+
+Add file: .gitignore
+
+Content:
+
+venv/
+**pycache**/
+*.pyc
+.env
+.ipynb_checkpoints/
+
+---
+
+# 🔹 16. First Commit
+
+git add .
+git commit -m "Initial commit"
+
+---
+
+# 🔹 17. Connect to GitHub
+
+git remote add origin https://github.com/your-username/repo-name.git
+
+---
+
+# 🔹 18. Push Code
+
+git branch -M main
+git push -u origin main
+
+---
+
+# 🔁 DAILY WORKFLOW
+
+git add .
+git commit -m "your message"
+git push
+
+---
+
+# ⚠️ IMPORTANT RULES
+
+✔ Always activate venv before installing
+✔ Always select correct interpreter in VS Code
+✔ Never push venv
+✔ Never push API keys (.env)
+✔ One project = one venv
+
+---
+
+# 📁 RECOMMENDED PROJECT STRUCTURE
+
+langchain-project/
+│
+├── venv/
+├── notebooks/
+├── src/
+├── .env
+├── .gitignore
+└── README.md
+
+---
+
+# 🎯 FINAL MEMORY
+
+👉 .py → terminal controls environment
+👉 .ipynb → kernel controls environment
+👉 git → add → commit → push
+
+---
+
