@@ -1,3 +1,4 @@
 venv
 .env
 my_tasks.db
+setup.txt

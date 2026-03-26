@@ -6,3 +6,7 @@ streamlit
 langchain-ollama
 langchain-community
 langgraph
+pypdf
+beautifulsoup4
+langchain-text-splitters
+langchain-chroma
